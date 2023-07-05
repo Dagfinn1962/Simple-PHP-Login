@@ -1,7 +1,7 @@
 <?php 
 //Connects to your Database 
-mysql_connect("db location", "username", "password") or die(mysql_error()); 
-mysql_select_db("database name") or die(mysql_error()); 
+mysql_connect("localhost", "aichatbot", "Bulldog@1979") or die(mysql_error()); 
+mysql_select_db("member") or die(mysql_error()); 
 
 //This code runs if the form has been submitted
 if (isset($_POST['submit'])) { 
