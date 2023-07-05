@@ -1,13 +1,13 @@
 <?php 
 
 //Connects to your Database 
-$conect = mysqli_connect("db location","username","password", "forks") or die(mysql_error()); 
+$conect = mysqli_connect("localhost","aichatbot","bulldog@1979", "forks") or die(mysql_error()); 
 
 //Checks if there is a login cookie
-if(isset($_COOKIE['ID_your_site'])){ //if there is, it logs you in and directes you to the members page
- 	$username = $_COOKIE['ID_your_site']; 
- 	$pass = $_COOKIE['Key_your_site'];
- 	$check = mysqli_query($conect, "SELECT * FROM users WHERE username = '$username'")or die(mysql_error());
+if(isset($_COOKIE['https://www,aichatbot.ai'])){ //if there is, it logs you in and directes you to the members page
+ 	$username = $_COOKIE['aichatbot']; 
+ 	$pass = $_COOKIE['Bulldog@1979'];
+ 	$check = mysqli_query($conect, "SELECT * FROM member WHERE username = '$username'")or die(mysql_error());
 
  	while($info = mysqli_fetch_array( $check )){
  		if ($pass != $info['password']){}
