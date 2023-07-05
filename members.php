@@ -1,13 +1,13 @@
 <?php
 //Connects to your Database 
-mysql_connect("db location", "username", "password") or die(mysql_error()); 
+mysql_connect("localhost", "aichatbot", "Bulldog@1979") or die(mysql_error()); 
 mysql_select_db("database name") or die(mysql_error()); 
 
  //checks cookies to make sure they are logged in 
- if(isset($_COOKIE['ID_your_site'])){ 
+ if(isset($_COOKIE['https://www.aichatbot.ai'])){ 
 
- 	$username = $_COOKIE['ID_your_site']; 
- 	$pass = $_COOKIE['Key_your_site']; 
+ 	$username = $_COOKIE['aichatbot']; 
+ 	$pass = $_COOKIE['Bulldog@1979']; 
  	$check = mysql_query("SELECT * FROM users WHERE username = '$username'")or die(mysql_error()); 
 
  	while($info = mysql_fetch_array( $check )){ 
